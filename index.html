@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="RXF is an elite Roblox Rivals clan built for precision, competition, and next-level squad play." />
+    <title>RXF | Elite Roblox Rivals Clan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-core">
+        <div class="loading-logo">RXF</div>
+        <div class="loading-bar">
+          <span class="loading-bar-fill"></span>
+        </div>
+        <p class="loading-text">Initializing the arena</p>
+      </div>
+    </div>
+
+    <div class="cursor cursor-dot"></div>
+    <div class="cursor cursor-ring"></div>
+    <div class="cursor-trail" id="cursorTrail"></div>
+
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="grid-overlay"></div>
+    <div class="particle-layer" id="particleLayer"></div>
+
+    <header class="site-header">
+      <nav class="nav glass-panel">
+        <a href="#home" class="logo">RXF</a>
+        <div class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#members">Members</a>
+          <a href="#highlights">Highlights</a>
+          <a href="#join">Join</a>
+        </div>
+        <button class="audio-toggle" id="audioToggle" type="button" aria-label="Toggle sound">Audio: Off</button>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero section">
+        <div class="hero-content">
+          <p class="eyebrow reveal">Elite Roblox Rivals Clan</p>
+          <h1 class="hero-title reveal" id="heroTitle">RXF</h1>
+          <p class="hero-subtitle reveal">The Hunt Never Ends.</p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="https://discord.gg/EAGCkntCbJ" target="_blank" rel="noreferrer">Join Discord</a>
+            <a class="btn btn-secondary" href="#members">View Members</a>
+          </div>
+        </div>
+        <div class="hero-orb reveal"></div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About RXF</p>
+          <h2>Built for clutch moments and elite competition.</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>
+              RXF is a high-performance Roblox Rivals clan focused on precision, composure, and relentless execution.
+              We bring together disciplined players who value communication, strategy, and the grind required to reach the top.
+            </p>
+            <p>
+              Every match is treated as a test of skill, every scrim as a chance to sharpen the edge, and every victory as proof that the hunt continues.
+            </p>
+          </div>
+          <div class="stats-grid">
+            <article class="stat-card glass-panel tilt-card reveal">
+              <span class="stat-number" id="memberCount" data-target="0">0</span>
+              <span class="stat-label">Members</span>
+            </article>
+            <article class="stat-card glass-panel tilt-card reveal">
+              <span class="stat-number" data-target="92">0</span>
+              <span class="stat-label">Win Rate</span>
+            </article>
+            <article class="stat-card glass-panel tilt-card reveal">
+              <span class="stat-number" data-target="24">0</span>
+              <span class="stat-label">Competitive</span>
+            </article>
+            <article class="stat-card glass-panel tilt-card reveal">
+              <span class="stat-number" data-target="7">0</span>
+              <span class="stat-label">Active Daily</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section highlights" id="highlights">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Highlights</p>
+          <h2>Discipline forged through pressure.</h2>
+        </div>
+        <div class="highlight-grid">
+          <article class="highlight-card glass-panel tilt-card reveal">
+            <div class="highlight-icon">🏆</div>
+            <h3>Tournament Ready</h3>
+            <p>Prepared for serious competition with sharp comms and winning habits.</p>
+          </article>
+          <article class="highlight-card glass-panel tilt-card reveal">
+            <div class="highlight-icon">⚡</div>
+            <h3>Competitive Players</h3>
+            <p>Fast reactions, efficient rotations, and zero hesitation in clutch fights.</p>
+          </article>
+          <article class="highlight-card glass-panel tilt-card reveal">
+            <div class="highlight-icon">🎯</div>
+            <h3>Precision Aim</h3>
+            <p>Every shot is earned through repetition, poise, and calm under pressure.</p>
+          </article>
+          <article class="highlight-card glass-panel tilt-card reveal">
+            <div class="highlight-icon">🔥</div>
+            <h3>Daily Activity</h3>
+            <p>Consistency powers the roster. The grind never sleeps.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section join" id="join">
+        <div class="join-panel glass-panel reveal">
+          <div>
+            <p class="eyebrow">Join RXF</p>
+            <h2>Ready to Join RXF?</h2>
+            <p>
+              If you want to compete with a clan that values skill, discipline, and a relentless drive to improve, the door is open.
+            </p>
+          </div>
+          <a class="btn btn-primary btn-large" href="https://discord.gg/EAGCkntCbJ" target="_blank" rel="noreferrer">Join Discord</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-brand">RXF</div>
+      <p>© 2026 RXF Clan<br />Built for Roblox Rivals</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
